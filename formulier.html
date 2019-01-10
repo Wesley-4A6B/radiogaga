@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+        <head>  
+            <link rel="stylesheet" href="formulier.css">
+            
+            <meta http-equiv="Content-type"
+                content="text/html;
+                charset=UTF-8">
+            <meta name="robots" content="all">
+            <meta name="language" content="Dutch">
+            <meta name="author" content="Wesley">
+            <meta name="description" content="RadioGaga marketing">
+            <meta name="keywords" content="RadioGaga, muziek, playlist">
+            <meta name="copyright" content="copyright">
+ 
+            <title>Formulier</title>
+    
+        </head>
+        
+    
+        <body>
+            <nav>
+                    <ul>
+                        <li><a href="turning.html">Home</a></li>
+                        <li><a href="index.html">Playlist</a></li>
+                        <li><a href="formulier.html">Formulier</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+            <br>
+            
+            <div id="logo">
+                
+            </div>
+            
+            <main>
+               <form name="formulier"
+                     action = "mailto: postmaster@radiogaga.com"
+                     method = "post">
+                   <fieldset>
+                    <legend>Bestel gratis kaarten</legend>
+                       
+                       <input required type="text" id="naam"
+                          name="naam" placeholder="Naam" /><br>
+                       <input required type="email" id="email"
+                          name="email" placeholder="E-mail" /><br>
+                       <input required type="number" id="mobiel"
+                          name="mobiel" placeholder="Mobiel"/><br>
+                       <input required type="text" placeholder="Woonplaats" name="Woonplaats"
+                          id="Woonplaats" list="steden" />
+                            <datalist id="steden">
+                                <option value="Amsterdam" />
+                                <option value="Utrecht" />
+                                <option value="Antwerpen" />
+                                <option value="Apeldoorn" />
+                                <option value="Brussel" />
+                                <option value="Rotterdam" />
+                            </datalist> <br><br>
+                       
+                   <select required naam="concerten" id="concerten">
+                       <option value="0">Kies een concert</option>
+                       <option value="Manu Chau">Manu Chau</option>
+                       <option value="Evanescence">Evanescence</option>
+                       <option value="Sade">Sade</option>
+                   </select> <br>
+                       
+                    <label for="datum">Geboortedatum: </label> <br>
+                    <input required type="date" name="datum" id="datum" /> <br>
+                    <label for="geslacht">Geslacht: </label>
+                    Man <input type="radio" name="geslacht" value="M" />
+                    Vrouw <input type="radio" name="geslacht" value="V" />
+                   <br>
+                   <textarea placeholder="Schrijf een commentaar..."></textarea> <br>
+                       
+                    <label for="abbonementen">Gratis abbonementen:</label> <br>
+                    Nieuwsbrief:
+                    <input type="checkbox" name="nieuwsbrief"
+                             id="nieuwsbrief" value="nieuwsbrief" /> <br>
+                    Concertagenda:
+                    <input type="checkbox" name="agenda"
+                           id="agenda" value="agenda" /> <br>
+                    <label for="ranking">Album ranking</label>
+                    <input type="range" name="ranking" id="ranking" min="1" max="5">
+                   </fieldset> 
+                   <input type="submit" id="verzend"
+                     name="verzend" value="Verzend" />
+                </form>
+                <div id="pager">
+                    <div id="vorige">
+                        <a href="playlist_webbouw35.html">&lt;</a>
+                    </div>
+                    
+                    <div id="volgende">
+                        <a href="contact.html">&gt;</a>
+                    </div>
+                </div>
+            </main>
+            
+            <footer>
+                <a href="top"><img src="images/twitter.png" alt="x"</a>
+                <a href="top"><img src="images/youtube.png" alt="x"</a>
+                <a href="top"><img src="images/facebook.png" alt="x"</a>
+                <p>Copyright &copy; 2017 <i>Ontworpen door: Wesley Keiman</i>
+                Alle rechten voorbehouden.</p>
+            </footer>
+        </body>
+</html>
